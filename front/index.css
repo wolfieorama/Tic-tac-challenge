@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2E3440;
+  color: #D8DEE9
+}
+
+.game {
+  width: 800px;
+  height: 800px;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.block {
+  background: lightgrey;
+  font-size: 150px;
+  font-weight: normal;
+  background: #3B4252
+}
+
+.block.x::after {
+  content: 'x';
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D08770
+}
+
+
+.block.o::after {
+  content: 'o';
+  display: flex;
+  font-family: 'Indie Flower', cursive;
+  justify-content: center;
+  align-items: center;
+  color: #5E81AC
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tech-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "export FLASK_APP=\"./server/server.py\" && flask run",
+    "start-front": "node node_modules/browser-sync/dist/bin.js start -c bs-config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
